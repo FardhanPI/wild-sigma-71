@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: my-application
     runtime: docker
     region: oregon
@@ -7,8 +7,8 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: SESSION
-        value: ""
+        value: "RGNK~X1BNXGfs"
       - key: DATABASE_URL
         fromDatabase:
           name: my-database
-          property: connectionString
+          property: postgresql://myapp_user:FaoLb6pKd0ygTd7TNYgmyiS2zjeYwZyk@dpg-d2i8do75r7bs73f7teag-a/myapp_db_adoz
