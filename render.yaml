@@ -9,6 +9,4 @@ services:
       - key: SESSION
         value: "RGNK~X1BNXGfs"
       - key: DATABASE_URL
-        fromDatabase:
-          name: my-database
-          property: postgresql://myapp_user:FaoLb6pKd0ygTd7TNYgmyiS2zjeYwZyk@dpg-d2i8do75r7bs73f7teag-a/myapp_db_adoz
+        value: "postgresql://myapp_user:FaoLb6pKd0ygTd7TNYgmyiS2zjeYwZyk@dpg-d2i8do75r7bs73f7teag-a/myapp_db_adoz"
