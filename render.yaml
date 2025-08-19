@@ -1,6 +1,6 @@
 services:
   - type: worker
-    name: my-application
+    name: raganork-bot
     runtime: docker
     region: oregon
     plan: free
@@ -10,3 +10,7 @@ services:
         value: "RGNK~X1BNXGfs"
       - key: DATABASE_URL
         value: "postgresql://myapp_user:FaoLb6pKd0ygTd7TNYgmyiS2zjeYwZyk@dpg-d2i8do75r7bs73f7teag-a/myapp_db_adoz"
+      - key: SUDO
+        value: "919526180258"
+      - key: TZ
+        value: "Asia/Kolkata"
